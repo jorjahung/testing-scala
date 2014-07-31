@@ -9,12 +9,13 @@ import org.scalatest.{Matchers, FunSpec}
 class FizzBuzzTest extends FunSpec with Matchers {
 
   describe("FizzBuzz"){
-
     val fizz = new FizzBuzz
-
     it("returns 'Fizz' when the number is divisible by 3"){
       fizz.buzz(3) shouldBe "Fizz"
     }
 
+    it("returns 'Buzz' when the number is divisibly by 5"){
+      fizz.buzz(5) shouldBe "Buzz"
+    }
   }
 }
