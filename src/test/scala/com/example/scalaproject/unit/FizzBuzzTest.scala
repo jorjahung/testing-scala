@@ -22,5 +22,8 @@ class FizzBuzzTest extends FunSpec with Matchers {
       fizz.buzz(15) shouldBe "FizzBuzz"
     }
 
+    it("returns the number when the number is neither divisible by 3 or by 5"){
+      fizz.buzz(4) shouldBe 4
+    }
   }
 }
