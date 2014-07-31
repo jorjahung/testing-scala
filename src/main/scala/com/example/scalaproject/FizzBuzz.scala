@@ -5,7 +5,9 @@ package com.example.scalaproject
  */
 class FizzBuzz {
   def buzz(x: Int) : String = {
-    if (x % 3 == 0)
+    if (x % 15 == 0)
+      "FizzBuzz"
+    else if (x % 3 == 0)
       "Fizz"
     else
       "Buzz"

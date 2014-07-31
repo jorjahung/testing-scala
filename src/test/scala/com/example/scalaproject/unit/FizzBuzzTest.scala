@@ -14,8 +14,13 @@ class FizzBuzzTest extends FunSpec with Matchers {
       fizz.buzz(3) shouldBe "Fizz"
     }
 
-    it("returns 'Buzz' when the number is divisibly by 5"){
+    it("returns 'Buzz' when the number is divisible by 5"){
       fizz.buzz(5) shouldBe "Buzz"
     }
+
+    it("returns 'FizzBuzz' when the number is divisible by 3 and 5"){
+      fizz.buzz(15) shouldBe "FizzBuzz"
+    }
+
   }
 }
