@@ -1,3 +1,3 @@
-# Scala Project
+# Learning Scala
 
-To be written.
+The TDD way!
