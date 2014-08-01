@@ -1,8 +1,5 @@
 package com.example.scalaproject
 
-/**
- * Created by jorjahung on 31/07/2014.
- */
 class FizzBuzz {
   def buzz(x: Int) : Any = {
     var answer = ""
@@ -13,7 +10,7 @@ class FizzBuzz {
     if (answer == "")
       x
     else
-      return answer
+      answer
    }
 
   def divisibleBy(x: Int, y: Int): Boolean = {
