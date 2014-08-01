@@ -5,14 +5,15 @@ package com.example.scalaproject
  */
 class FizzBuzz {
   def buzz(x: Int) : Any = {
-    if (divisibleBy(x, 3) && divisibleBy(x, 5))
-      "FizzBuzz"
-    else if (divisibleBy(x, 3))
-      "Fizz"
-    else if (divisibleBy(x, 5))
-      "Buzz"
-    else
+    var answer = ""
+    if (divisibleBy(x, 3))
+      answer = "Fizz"
+    if (divisibleBy(x, 5))
+      answer += "Buzz"
+    if (answer == "")
       x
+    else
+      return answer
    }
 
   def divisibleBy(x: Int, y: Int): Boolean = {
