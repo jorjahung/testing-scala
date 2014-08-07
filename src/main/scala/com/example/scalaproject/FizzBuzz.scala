@@ -20,6 +20,7 @@ class FizzBuzz {
     case x if x divisibleBy 5 => "Buzz"
     case _ => number
   }
+
   implicit class RichInt(val self: Int) {
     def divisibleBy(y: Int): Boolean = self % y == 0
   }
